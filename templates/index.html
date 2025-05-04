@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHT20 Sensor Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Environment Monitoring</h1>
+        
+        <div class="sensor-readings">
+            <div class="card temp">
+                <h2>Temperature</h2>
+                <div class="value" id="temperature">--.- °C</div>
+            </div>
+            
+            <div class="card humi">
+                <h2>Humidity</h2>
+                <div class="value" id="humidity">--.- %</div>
+            </div>
+        </div>
+        
+        <div class="error" id="error"></div>
+        <div class="timestamp">Last update: <span id="timestamp">--:--:--</span></div>
+    </div>
 
+    <script src="/static/script.js"></script>
+</body>
+</html>
